@@ -39,7 +39,7 @@ class RouteList extends React.Component {
   };
   deleteRoute = index => {
     this.props.deleteRoute(index);
-    this.setState({});
+    this.setState({ selectedRoutes: [] });
   };
   handleCheckBoxChange = (event, index) => {
     if (event.target.checked) {
