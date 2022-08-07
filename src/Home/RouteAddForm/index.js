@@ -139,6 +139,7 @@ class RouteAddForm extends React.Component {
               size="md"
               onChange={event => this.handleRouteChange(event, 'routeStatus')}
             />
+            <Spacer />
             <FormLabel>Add Stops</FormLabel>
             <IconButton icon={<AddIcon />} onClick={() => this.addStop()} />
           </HStack>
