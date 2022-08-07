@@ -25,7 +25,7 @@ import {
 import React from 'react';
 import { connect } from 'react-redux';
 import { deleteRoute, setSelectedRoutes } from '../../actions';
-import { DeleteIcon } from '@chakra-ui/icons';
+import { DeleteIcon, InfoOutlineIcon } from '@chakra-ui/icons';
 import _ from 'lodash';
 
 class RouteList extends React.Component {
@@ -63,12 +63,28 @@ class RouteList extends React.Component {
   render() {
     return (
       <>
-        <Button
-          onClick={this.generatePolyline}
-          isDisabled={!(this.state.selectedRoutes.length > 0)}
-        >
-          Generate Polyine
-        </Button>
+        <HStack>
+          <Button
+            onClick={this.generatePolyline}
+            isDisabled={!(this.state.selectedRoutes.length > 0)}
+            marginBottom={'2'}
+          >
+            Generate Polyline
+          </Button>
+          <Box
+            w={'40%'}
+            h={'10'}
+            mb={'1'}
+            rounded={'s'}
+            bg="yellow.100"
+            overflow="auto"
+            borderOpacity={'0.7'}
+          >
+            <Text ml={'2'} mt={'2'}>
+              <InfoOutlineIcon /> Please Select Routes To Generate Polyline
+            </Text>
+          </Box>
+        </HStack>
         <Accordion allowMultiple>
           {this.props.routes.map((route, index) => {
             return (
@@ -93,9 +109,9 @@ class RouteList extends React.Component {
                     Starting Long: {route.routStartLong}
                   </Box>
                   <Box width={'35%'} marginLeft={'1.5'}>
-                    Destiantion Lat:{route.routeEndLat}
+                    Destination Lat: {route.routeEndLat}
                     <Spacer />
-                    Destiantion Long:{route.routeEndLong}
+                    Destination Long: {route.routeEndLong}
                   </Box>
                   <Box width={'5%'}>
                     <Icon viewBox="0 0 200 200" color="red.500">
@@ -119,7 +135,7 @@ class RouteList extends React.Component {
                 </HStack>
 
                 <AccordionPanel pb={4}>
-                  {route.stops ? (
+                  {route.stops && route.stops.length > 0 ? (
                     <TableContainer>
                       <Table variant="simple">
                         <TableCaption>Stops In A Route</TableCaption>
