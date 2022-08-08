@@ -63,23 +63,14 @@ class RouteList extends React.Component {
   render() {
     return (
       <>
-        <HStack>
+        <HStack marginBottom={'3'}>
           <Button
             onClick={this.generatePolyline}
             isDisabled={!(this.state.selectedRoutes.length > 0)}
-            marginBottom={'2'}
           >
             Generate Polyline
           </Button>
-          <Box
-            w={'40%'}
-            h={'10'}
-            mb={'1'}
-            rounded={'s'}
-            bg="yellow.100"
-            overflow="auto"
-            borderOpacity={'0.7'}
-          >
+          <Box w={'40%'} h={'10'} rounded={'s'} bg="yellow.100">
             <Text ml={'2'} mt={'2'}>
               <InfoOutlineIcon /> Please Select Routes To Generate Polyline
             </Text>
@@ -104,14 +95,14 @@ class RouteList extends React.Component {
                     </Flex>
                   </Box>
                   <Box width={'35%'}>
-                    Starting Lat: {route.routStartLat}
+                    Starting Latitude: {route.routStartLat}
                     <Spacer />
-                    Starting Long: {route.routStartLong}
+                    Starting Longitude: {route.routStartLong}
                   </Box>
                   <Box width={'35%'} marginLeft={'1.5'}>
-                    Destination Lat: {route.routeEndLat}
+                    Destination Latitude: {route.routeEndLat}
                     <Spacer />
-                    Destination Long: {route.routeEndLong}
+                    Destination Longitude: {route.routeEndLong}
                   </Box>
                   <Box width={'5%'}>
                     <Icon viewBox="0 0 200 200" color="red.500">

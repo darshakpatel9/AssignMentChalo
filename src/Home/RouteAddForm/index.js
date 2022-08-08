@@ -87,7 +87,7 @@ class RouteAddForm extends React.Component {
             />
           </HStack>
           <HStack marginBottom={'1'}>
-            <FormLabel>Route start Long:</FormLabel>
+            <FormLabel>Route start Longitude:</FormLabel>
             <Input
               max={180}
               step="0.0001"
@@ -98,7 +98,7 @@ class RouteAddForm extends React.Component {
               onChange={event => this.handleRouteChange(event, 'routStartLong')}
             />
             <Spacer />
-            <FormLabel>Route start Lat:</FormLabel>
+            <FormLabel>Route start Latitude:</FormLabel>
             <Input
               max={90}
               min={-90}
@@ -110,7 +110,7 @@ class RouteAddForm extends React.Component {
             />
           </HStack>
           <HStack marginBottom={'1'}>
-            <FormLabel marginRight={'19px'}>Route End Long:</FormLabel>
+            <FormLabel marginRight={'19px'}>Route End Longitude:</FormLabel>
             <Input
               max={180}
               min={-180}
@@ -121,7 +121,7 @@ class RouteAddForm extends React.Component {
               onChange={event => this.handleRouteChange(event, 'routeEndLong')}
             />
             <Spacer />
-            <FormLabel>Route End Lat:</FormLabel>
+            <FormLabel>Route End Latitude:</FormLabel>
             <Input
               max={90}
               min={-90}
