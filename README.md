@@ -1,27 +1,27 @@
-This Project was done part assignement while appying for CHALO App.
+# CHALO App Location Form and Mapping
 
-Assignemnt was to create a form and store two locations with lang and lat. and locations in beetween those two point. store that data. and onother funcationality was to map and create a line on the maps or show route on the google map.CHALO App Assignment: Location Form and Mapping
+This project was completed as part of an assignment for the CHALO App. It features a form for capturing two locations along with their latitude and longitude coordinates. Additionally, the system calculates and stores intermediary locations between the two provided points. The captured data can be visualized on a map, displaying the route between the two locations.
 
-This project was developed as part of an assignment for the CHALO App. The objective was to design and implement a form capable of storing two locations along with their respective latitude and longitude coordinates. Additionally, the system needed to calculate and store the intermediary locations between these two points. The data captured from this form was then stored for future use.
+## Features
 
-Functionality:
+- **Location Form:** Capture two locations with latitude and longitude coordinates.
+- **Intermediary Locations:** Calculate and store intermediary locations.
+- **Map Visualization:** Display the route between the two locations on a map.
 
-Location Form: Users can input two locations along with their latitude and longitude coordinates. The form captures this data accurately, enabling seamless storage for further processing.
+## How to Use
 
-Mapping and Route Display: Upon submission of the form, the system generates a visual representation of the route between the two provided locations. This is achieved by utilizing Google Maps API, allowing users to view the calculated route and intermediary points on the map interface.
+1. Clone this repository to your local machine.
+2. Install the necessary dependencies.
+3. Set up environment variables, such as the Google Maps API key.
+4. Launch the application and access the location form.
+5. Input the desired locations and submit the form.
+6. View the generated route on the map interface.
 
-How to Use:
+## Technologies Used
 
-Clone the repository to your local machine.
-Install any necessary dependencies.
-Set up the required environment variables, such as Google Maps API key.
-Launch the application and access the location form.
-Input the desired locations and submit the form.
-View the generated route on the map interface.
-Technologies Used:
+- **Frontend:** HTML, CSS, JavaScript, ChakraUI
+- **Mapping:** Google Maps API
 
-Frontend: HTML, CSS, JavaScript
-Mapping: Google Maps API
-Contributing:
+## Contributing
 
-Contributions are welcome!
+Contributions are welcome! 
