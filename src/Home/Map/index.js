@@ -17,7 +17,7 @@ class Map extends React.Component {
   };
   render() {
     return (
-      <LoadScript googleMapsApiKey="AIzaSyAUq5AvYt0S4uG86QRy6uA0t7i0JOqpx-c">
+      <LoadScript googleMapsApiKey={process.env.MAPAPIKEY}>
         <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={3}>
           {this.props.selectedRoutesCord &&
             this.props.selectedRoutesCord.map(path => {
