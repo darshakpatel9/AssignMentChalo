@@ -1,68 +1,27 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Project was done part assignement while appying for CHALO App.
 
-## Available Scripts
+Assignemnt was to create a form and store two locations with lang and lat. and locations in beetween those two point. store that data. and onother funcationality was to map and create a line on the maps or show route on the google map.CHALO App Assignment: Location Form and Mapping
 
-In the project directory, you can run:
+This project was developed as part of an assignment for the CHALO App. The objective was to design and implement a form capable of storing two locations along with their respective latitude and longitude coordinates. Additionally, the system needed to calculate and store the intermediary locations between these two points. The data captured from this form was then stored for future use.
 
-### `npm start`
+Functionality:
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Location Form: Users can input two locations along with their latitude and longitude coordinates. The form captures this data accurately, enabling seamless storage for further processing.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Mapping and Route Display: Upon submission of the form, the system generates a visual representation of the route between the two provided locations. This is achieved by utilizing Google Maps API, allowing users to view the calculated route and intermediary points on the map interface.
 
-### `npm test`
+How to Use:
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Clone the repository to your local machine.
+Install any necessary dependencies.
+Set up the required environment variables, such as Google Maps API key.
+Launch the application and access the location form.
+Input the desired locations and submit the form.
+View the generated route on the map interface.
+Technologies Used:
 
-### `npm run build`
+Frontend: HTML, CSS, JavaScript
+Mapping: Google Maps API
+Contributing:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Contributions are welcome!
